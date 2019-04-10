@@ -1,0 +1,12 @@
+<p>
+  Click below button to see details about Customer
+</p>
+
+
+<p>{{customerDetailInformation}}</p>
+
+<app-user-rating 
+      [customerName]='customerNameInfo' 
+      [customerCellNo]='customerCellNoInfo' 
+      (customerDetailsInfo)='getCustomerInformation($event)'>
+</app-user-rating>
