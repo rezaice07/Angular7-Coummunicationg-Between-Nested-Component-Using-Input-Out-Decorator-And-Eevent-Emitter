@@ -1,10 +1,5 @@
 import { Component, 
-  OnInit,
-  OnChanges,
-  SimpleChanges,
-
-
-  Input
+  OnInit  
 } from '@angular/core';
 
 import { FormsModule} from '@angular/forms';
@@ -16,7 +11,9 @@ import { EmployeeModel} from '../models/EmployeeModel';
   templateUrl: './angular-life-cycle-hook.component.html',
   styleUrls: ['./angular-life-cycle-hook.component.css']
 })
-export class AngularLifeCycleHookComponent implements OnInit ,OnChanges{
+export class AngularLifeCycleHookComponent implements OnInit{
+
+  CustomerEmailInfo:string='rejaice07@gmail.com';
 
   public customerNameInfo:string;
   public customerCellNoInfo:string;
@@ -33,11 +30,7 @@ export class AngularLifeCycleHookComponent implements OnInit ,OnChanges{
 
   ngOnInit() {
     console.log(`AngularLifeCycleHookComponent:ngOnInit()`);
-  }
-
-  ngOnChanges(changes: SimpleChanges) {
-    console.log(`AngularLifeCycleHookComponent:ngOnChanges()`);    
- }
+  }  
 
  getCustomerInformation(details:string):void{
     this.customerDetailInformation=details;

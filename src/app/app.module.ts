@@ -9,13 +9,13 @@ import {
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AngularLifeCycleHookComponent } from './angular-life-cycle-hook/angular-life-cycle-hook.component';
-import { UserRatingComponent } from './user-rating/user-rating.component';
+import { ComponentNestedComponent } from './component-nested/component-nested.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AngularLifeCycleHookComponent,
-    UserRatingComponent
+    ComponentNestedComponent
   ],
   imports: [
     BrowserModule,

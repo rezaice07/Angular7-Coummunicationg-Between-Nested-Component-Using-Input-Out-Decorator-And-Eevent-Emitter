@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UserRatingComponent } from './user-rating.component';
+import { ComponentNestedComponent } from './component-nested.component';
 
-describe('UserRatingComponent', () => {
-  let component: UserRatingComponent;
-  let fixture: ComponentFixture<UserRatingComponent>;
+describe('ComponentNestedComponent', () => {
+  let component: ComponentNestedComponent;
+  let fixture: ComponentFixture<ComponentNestedComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ UserRatingComponent ]
+      declarations: [ ComponentNestedComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(UserRatingComponent);
+    fixture = TestBed.createComponent(ComponentNestedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

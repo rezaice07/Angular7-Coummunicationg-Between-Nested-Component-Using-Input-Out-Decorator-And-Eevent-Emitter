@@ -2,11 +2,12 @@
   Click below button to see details about Customer
 </p>
 
+<p>Email: <input [(ngModel)]="CustomerEmailInfo" id="CustomerEmailInfo" name="CustomerEmailInfo"></p>
 
 <p>{{customerDetailInformation}}</p>
 
-<app-user-rating 
-      [customerName]='customerNameInfo' 
-      [customerCellNo]='customerCellNoInfo' 
-      (customerDetailsInfo)='getCustomerInformation($event)'>
-</app-user-rating>
+<app-component-nested [customerName]='customerNameInfo' 
+[CustomerEmail]='CustomerEmailInfo'
+[customerCellNo]='customerCellNoInfo'
+  (customerDetailsInfo)='getCustomerInformation($event)'>
+</app-component-nested>
